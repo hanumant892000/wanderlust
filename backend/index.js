@@ -4,10 +4,8 @@ const cors = require("cors");
 const app = express();
 const PORT = 8000;
 const cloudinary = require('./cloudinary/cloudConfig')
-// const listingModel = require("./schema/listing.model");
 
-// const data =require('./data')
-// console.log(data)
+
 connectToDB();
 console.log(cloudinary.config())
 app.use(cors());
